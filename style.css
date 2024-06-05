@@ -1,35 +1,28 @@
 ::-webkit-scrollbar {
     display: none;
 }
-
 body {
     margin: 0px;
     padding: 0px;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
-
 header {
     margin: 0px;
-    padding: 0px 5% 0px 5%;
-    width: 90%;
+    padding: 0px 2% 0px 0px;
+    width: 98%;
     height: 100px;
     background-color: transparent;
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: end;
+    position: fixed;
+    background-color: transparent;
 }
-
 header a {
-    margin: 0px 20px 0px 10px;
-    text-decoration: none;
-    font-size: 20px;
-    font-weight: 600;
-    display: flex;
-    align-items: center;
-    color: black;
+    margin: 0px 20px 0px 0px;
 }
 header a img {
-    margin: 0px 7px 0px 0px;
+    margin: 0px;
     padding: 0px;
     width: 30px;
     height: 30px;
@@ -98,6 +91,11 @@ header a img {
     /* box-shadow: 5px 5px 5px #dcdcdc; */
 }
 
+#container:hover {
+    box-shadow: 5px 5px 20px #eeeeee;
+    transition: 0.5s;
+}
+
 #container-left {
     width: 50%;
     height: 100%;
@@ -159,24 +157,19 @@ header a img {
     color: #60024a;
 }
 
-footer {
-    margin: 0px;
-    padding: 40px 0px;
-    width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
 
-footer button {
+
+#cvbutton {
+    position: fixed;
+    bottom: 20px;
+    right: 30px;
     margin: 0px;
-    padding: 20px 30px;
-    border: none;
-    border-radius: 50px;
-    cursor: pointer;
-    background-color: rgb(72, 72, 255);
-    font-weight: 600;
-    color: white;
+    padding: 7px 0px;
+    text-decoration: none;
+    font-weight: 400;
+    font-size: 16px;
+    color: black;
+    border-bottom: 2px dotted black;
 }
 
 
@@ -194,11 +187,31 @@ footer button {
 }
 
 /* #decor2 {
-    width: 50px;
-    height: 50px;
-    border-radius: 50px;
-    background-color: rgb(140, 114, 255);
+    width: 200px;
+    height: 200px;
+    border-radius: 100px;
+    background-color: rgba(140, 114, 255, 0.226);
     position: absolute;
-    top: 150px;
-    left: 150px;
+    top: 300px;
+    right: 150px;
+    backdrop-filter: blur(10px);
+    z-index: -1;
 } */
+
+#decor3 {
+    margin: 0px;
+    padding: 0px;
+    width: 200px;
+    height: 100px;
+    background-color: transparent;
+    position: fixed;
+    bottom: 0px;
+    right: 0px;
+    cursor: pointer;
+}
+
+#decor3:hover {
+    background-color: #d0ceff;
+    filter: blur(150px);
+    transition: 0.5s;
+}
