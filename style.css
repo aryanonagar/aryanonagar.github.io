@@ -1,0 +1,257 @@
+::-webkit-scrollbar {
+    background-color: transparent;
+    width: 7px;
+}
+::-webkit-scrollbar-thumb {
+    width: 100%;
+    margin: 0px;
+    padding: 0px;
+    border-radius: 5px;
+    background-color: var(--accentcolor);
+}
+:root {
+    font-family: Inter, sans-serif;
+    font-feature-settings: 'liga' 1, 'calt' 1; 
+}
+@supports (font-variation-settings: normal) {
+    :root { font-family: InterVariable, sans-serif; }
+}
+:root {
+    --primarycolor: #00522c;
+    --backgroundcolor: #f8fffd;
+    --accentcolor: #0fed85;
+    --grey: #777777;
+    --black: #111111;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0px;
+    padding: 0px;
+    background-color: var(--backgroundcolor);
+    color: var(--primarycolor);
+}
+
+ion-icon {
+    font-size: 20px;
+    margin: 0px 0px -6px 0px;
+}
+
+/* header */
+header {
+    padding: 0px;
+    margin: 0px;
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    position: fixed;
+    top: 0px;
+    right: 0px;
+    background-color: transparent;
+}
+
+header nav {
+    margin: 0px;
+    padding: 0px;
+}
+
+header nav ul {
+    margin: 20px 30px;
+    padding: 0px;
+    display: flex;
+}
+
+header nav ul li {
+    margin: 0px;
+    padding: 0px;
+    list-style-type: none;
+}
+
+header a {
+    text-decoration: none;
+    font-size: medium;
+    font-weight: 600;
+    color: var(--primarycolor);
+    padding: 5px 0px;
+    margin: 0px 40px 0px 0px;
+    border: none;
+    border-bottom: 2px solid var(--primarycolor);
+}
+
+#header-button {
+    width: fit-content;
+    height: fit-content;
+    margin: 0px;
+    padding: 10px 30px;
+    border-radius: 30px;
+    background-color: var(--primarycolor);
+    color: var(--backgroundcolor);
+}
+
+/* container one */
+#container-one {
+    margin: 0px;
+    padding: 0px;
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#container-one h2 {
+    margin: 0px;
+    padding: 0px;
+    font-size: 70px;
+    color: var(--primarycolor);
+}
+
+#container-one p {
+    width: 400px;
+    margin: 50px 0px 0px 0px;
+    padding: 0px;
+    text-align: center;
+    font-size: x-large;
+    font-weight: 400;
+    line-height: 40px;
+    color: var(--primarycolor);
+}
+
+/* scroll */
+#scrollOne {
+    width: fit-content;
+    height: fit-content;
+    margin: 0px;
+    padding: 0px;
+    display: flex;
+    align-items: center;
+    position: fixed;
+    bottom: 50px;
+    right: 47%;
+}
+
+.hidden {
+    opacity: 0;
+}
+
+#scrollOne p {
+    margin: 0px 20px;
+    padding: 0px;
+    color: var(--grey);
+}
+
+#scrollTwo {
+    margin: 0px;
+    padding: 5px;
+    height: 30px;
+    border: 1px solid var(--grey);
+    border-radius: 15px;
+}
+
+#scrollThree {
+    width: 5px;
+    height: 5px;
+    border: none;
+    border-radius: 5px;
+    background-color: var(--grey);
+    animation: bounce 6s infinite;
+}
+
+@keyframes bounce {
+    0% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(25px);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+
+/* project */
+#project {
+    margin: 0px;
+    padding: 0px;
+    width: 100%;
+    height: 80vh;
+    display: flex;
+}
+
+#project-left {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#project-left img {
+    margin: 0px;
+    padding: 0px;
+    object-fit: cover;
+}
+
+#project-right {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    justify-content: center;
+}
+
+#project-right h2 {
+    margin: 0px;
+    padding: 0px;
+}
+
+#project-right p {
+    width: 400px;
+    margin: 20px 0px;
+    padding: 0px;
+    line-height: 25px;
+}
+
+#project-right button {
+    width: fit-content;
+    height: fit-content;
+    margin: 0px;
+    padding: 20px 30px;
+    border: none;
+    border-radius: 0px;
+    cursor: pointer;
+    background-color: var(--primarycolor);
+    color: var(--backgroundcolor);
+    font-family: monospace;
+    font-size: medium;
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+
+/* footer */
+footer {
+    width: 100%;
+    margin: 0px;
+    padding: 10px 0px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--grey);
+}
+
+#deco1 {
+    display: none;
+}
+#deco2 {
+    display: none;
+}
+#deco3  {
+    display: none;
+}

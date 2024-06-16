@@ -1,0 +1,59 @@
+::-webkit-scrollbar {
+    display: none;
+}
+
+:root {
+    font-family: Inter, sans-serif;
+    font-feature-settings: 'liga' 1, 'calt' 1; /* fix for Chrome */
+  }
+  @supports (font-variation-settings: normal) {
+    :root { font-family: InterVariable, sans-serif; }
+  }
+
+body {
+    background-color: #ffdde5;
+    color: #111111;
+}
+
+ion-icon {
+    font-size: 24px;
+    margin: 0px 0px -6px 0px;
+}
+
+header {
+    padding: 0px;
+    margin: 0px;
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header button {
+    margin: 10px 30px;
+    padding: 10px 20px;
+    border: 0px solid rgb(238, 224, 255);
+    border-radius: 50px;
+    background-color: #d40d42;
+    color: #fddfdf;
+    font-weight: 600;
+    font-size: large;
+    box-sizing: border-box 10px;
+    float: right;
+    cursor: pointer;
+}
+
+#container {
+    margin: 0px;
+    padding: 50px 2.5%;
+    width: 95%;
+}
+
+#container p {
+    margin: 0px;
+    padding: 0px;
+    width: 100%;
+    font-size: xx-large;
+    line-height: 50px;
+}
